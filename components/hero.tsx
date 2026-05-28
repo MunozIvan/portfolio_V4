@@ -24,6 +24,13 @@ export function Hero() {
           {/* LEFT SIDE */}
           <div className="space-y-8">
             <FadeIn delay={0.2}>
+              <div className="relative">
+                <img
+                  src="/lil_pixel.gif"
+                  alt="Pixel Character"
+                  className="w-32 h-32 object-contain pixelated"
+                />
+              </div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card/50 backdrop-blur-sm">
                 <Sparkles className="w-4 h-4 text-primary" />
                 <span className="text-sm text-muted-foreground">
