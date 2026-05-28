@@ -12,8 +12,8 @@ export type Language = "en" | "es";
 
 type Translations = {
   nav: {
+    home: string;
     about: string;
-    projects: string;
     experience: string;
     contact: string;
   };
@@ -91,7 +91,7 @@ const translations: Record<Language, Translations> = {
   en: {
     nav: {
       about: "About",
-      projects: "Projects",
+      home: "Home",
       experience: "Experience",
       contact: "Contact",
     },
@@ -197,8 +197,8 @@ const translations: Record<Language, Translations> = {
   },
   es: {
     nav: {
+      home: "Inicio",
       about: "Sobre mí",
-      projects: "Proyectos",
       experience: "Experiencia",
       contact: "Contacto",
     },

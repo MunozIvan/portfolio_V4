@@ -17,7 +17,7 @@ export function Hero() {
   const { t } = useI18n()
 
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 md:px-12 pt-20">
+    <section id="hero" className="min-h-screen flex flex-col justify-center px-6 md:px-12 pt-20">
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           

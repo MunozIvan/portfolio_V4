@@ -15,8 +15,8 @@ export function Header() {
   const { t } = useI18n()
 
   const navItems = [
+    { name: t.nav.home, href: "hero" },
     { name: t.nav.about, href: "about" },
-    { name: t.nav.projects, href: "projects" },
     { name: t.nav.experience, href: "experience" },
     { name: t.nav.contact, href: "contact" },
   ]
@@ -24,12 +24,18 @@ export function Header() {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId)
 
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      })
-    }
+    if (!section) return
+
+    const headerOffset = 100
+
+    const elementPosition = section.getBoundingClientRect().top
+    const offsetPosition =
+      window.pageYOffset + elementPosition - headerOffset
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    })
   }
 
   return (
