@@ -9,11 +9,11 @@ export function About() {
   const { t } = useI18n()
 
   const skills = [
-    { icon: Code2, title: t.about.skills.languages.title, description: t.about.skills.languages.description },
-    { icon: Container, title: t.about.skills.frameworks.title, description: t.about.skills.frameworks.description },
-    { icon: Database, title: t.about.skills.databases.title, description: t.about.skills.databases.description },
-    { icon: Globe, title: t.about.skills.devops.title, description: t.about.skills.devops.description },
-    { icon: Wrench, title: t.about.skills.tools.title, description: t.about.skills.tools.description },
+    { key: 'languages', icon: Code2, title: t.about.skills.languages.title, description: t.about.skills.languages.description },
+    { key: 'frameworks', icon: Container, title: t.about.skills.frameworks.title, description: t.about.skills.frameworks.description },
+    { key: 'databases', icon: Database, title: t.about.skills.databases.title, description: t.about.skills.databases.description },
+    { key: 'devops', icon: Globe, title: t.about.skills.devops.title, description: t.about.skills.devops.description },
+    { key: 'tools', icon: Wrench, title: t.about.skills.tools.title, description: t.about.skills.tools.description },
   ]
 
   return (
@@ -40,7 +40,7 @@ export function About() {
 
           <StaggerContainer className="grid sm:grid-cols-2 gap-4" staggerDelay={0.1}>
             {skills.map((skill) => (
-              <StaggerItem key={skill.title}>
+              <StaggerItem key={skill.key}>
                 <motion.div
                   className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors duration-500"
                   whileHover={{ y: -4, scale: 1.02 }}

@@ -131,7 +131,7 @@ const translations: Record<Language, Translations> = {
         },
         devops: {
           title: "DevOps & Cloud",
-          description: "Vercel, WN Power, GitHub, PM2",
+          description: "CI/CD, Vercel, WN Power, GitHub, PM2",
         },
       },
     },
@@ -220,15 +220,15 @@ const translations: Record<Language, Translations> = {
       p3: "Disfruto aprender y seguir progresando constantemente, por lo que actualmente estoy cursando una Licenciatura en Ciberseguridad en la Universidad de Palermo para ampliar mis conocimientos y fortalecer mis habilidades técnicas.",
       skills: {
         languages: {
-          title: "languages",
+          title: "Lenguajes",
           description: "JavaScript, TypeScript, HTML",
         },
         databases: {
-          title: "Databases",
+          title: "Bases de datos",
           description: "MySQL, PostgreSQL, Redis",
         },
         tools: {
-          title: "Tools",
+          title: "Herramientas",
           description:
             "Git, Postman, Figma, VS Code, WebSocket, NPM, Axios, AI Agents",
         },
@@ -238,7 +238,7 @@ const translations: Record<Language, Translations> = {
         },
         devops: {
           title: "Devops & Cloud",
-          description: "Vercel, WN Power, Github, PM2",
+          description: "CI/CD, Vercel, WN Power, Github, PM2",
         },
       },
     },
