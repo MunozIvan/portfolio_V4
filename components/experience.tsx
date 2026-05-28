@@ -57,13 +57,9 @@ export function Experience() {
                     <h3 className="text-lg font-medium text-foreground">
                       {exp.role}
                     </h3>
-                    <a
-                      href={exp.companyUrl}
-                      className="inline-flex items-center gap-1 text-primary hover:underline underline-offset-4"
-                    >
+                    <p className="inline-flex items-center gap-1 text-primary hover:underline underline-offset-4">
                       {exp.company}
-                      <ArrowUpRight className="w-3 h-3" />
-                    </a>
+                    </p>
                   </div>
                   <p className="text-muted-foreground leading-relaxed max-w-2xl whitespace-pre-line">
                     {exp.description}
