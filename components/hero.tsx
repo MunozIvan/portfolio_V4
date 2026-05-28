@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { AnimatedText, FadeIn, FloatingElement } from "./animations"
-import { UserStar, Sparkles } from "lucide-react"
+import { UserStar, Sparkles, ArrowUpRight } from "lucide-react"
 import { useI18n } from "@/lib/i18n"
 import Image from "next/image"
 
@@ -46,26 +46,40 @@ export function Hero() {
               </FadeIn>
             </div>
 
-            <FadeIn delay={0.8}>
-              <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-center gap-5">
+              <FadeIn delay={0.8}>
+                <div className="flex flex-wrap items-center gap-4">
+                  <motion.a
+                    href="https://www.linkedin.com/in/ivanmg-f-s-developer/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium text-sm"
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 400,
+                      damping: 17,
+                    }}
+                  >
+                    {t.hero.getInTouch}
+                    <UserStar className="w-4 h-4" />
+                  </motion.a>
+                </div>
+              </FadeIn>
+              <FadeIn delay={0.4}>
                 <motion.a
-                  href="https://www.linkedin.com/in/ivanmg-f-s-developer/"
+                  href={t.hero.resumeURL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium text-sm"
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{
-                    type: "spring",
-                    stiffness: 400,
-                    damping: 17,
-                  }}
+                  className="inline-flex items-center gap-2 text-primary hover:underline underline-offset-4 font-medium"
+                  whileHover={{ x: 4 }}
                 >
-                  {t.hero.getInTouch}
-                  <UserStar className="w-4 h-4" />
+                  {t.experience.viewResume}
+                  <ArrowUpRight className="w-4 h-4" />
                 </motion.a>
-              </div>
-            </FadeIn>
+              </FadeIn>
+            </div>
           </div>
 
           {/* RIGHT SIDE */}

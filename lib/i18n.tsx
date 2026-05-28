@@ -22,6 +22,7 @@ type Translations = {
     title: string;
     description: string;
     viewProjects: string;
+    resumeURL: string;
     getInTouch: string;
     scroll: string;
     codeSnippet: string;
@@ -97,10 +98,10 @@ const translations: Record<Language, Translations> = {
     hero: {
       badge: "Available for work",
       title: "Building efficient software.",
-      description:
-        "I'm a Backend Engineer passionate about creating real-world solutions by manipulating bits 🧑‍💻.",
+      description: "I'm a Backend Engineer passionate about creating real-world solutions by manipulating bits 🧑‍💻.",
       viewProjects: "View Projects",
       getInTouch: "Get in touch",
+      resumeURL: './ivan_cv_en.pdf',
       scroll: "Scroll",
       codeSnippet: "'Open to work 😊'",
     },
@@ -172,25 +173,22 @@ const translations: Record<Language, Translations> = {
           role: "Backend Engineer",
           company: "Farmafe",
           period: "2023 - Present",
-          description:
-            "• Developed multiple APIs to automate prescription validation through WhatsApp.\n• Built a financial management platform for pharmacy chains, increasing subscribed clients by 30%.\n• Managed and optimized two SQL databases to improve system performance and stability.\n• Developed custom scripts that streamlined internal processes and improved operational efficiency.\n• Coordinated and led the frontend team by clearly communicating the planned backend architecture and upcoming features to facilitate development and integration tasks.",
+          description: "• Developed multiple APIs to automate prescription validation through WhatsApp.\n• Built a financial management platform for pharmacy chains, increasing subscribed clients by 30%.\n• Managed and optimized two SQL databases to improve system performance and stability.\n• Developed custom scripts that streamlined internal processes and improved operational efficiency.\n• Coordinated and led the frontend team by clearly communicating the planned backend architecture and upcoming features to facilitate development and integration tasks.",
           skills: ["Node.js", "TypeScript", "Express", "MySQL"],
         },
         freelance: {
           role: "DevTools Developer",
           company: "Freelance",
           period: "2024 - Present",
-          description:
-            "• Designed programs to automate data extraction and processing from multiple websites.\n• Generated XLS reports to enable more efficient data analysis.\n• Developed Telegram bots that automatically notified specific changes in real time.\n• Optimized repetitive tasks and improved workflow efficiency through custom automation solutions.",
-          skills: ["Node.js", "TypeScript", "Express", "MySQL"],
+          description: "• Designed programs to automate data extraction and processing from multiple websites.\n• Generated XLS reports to enable more efficient data analysis.\n• Developed Telegram bots that automatically notified specific changes in real time.\n• Optimized repetitive tasks and improved workflow efficiency through custom automation solutions.",
+          skills: ["Node.Js", "TypeScript", "Selenium", "NPM"],
         },
       },
     },
     contact: {
       section: "04. Contact",
       title: "Let's Work Together",
-      description:
-        "I’m currently open to new opportunities and interesting projects. Whether you have a question or just want to say hi, I’ll do my best to respond.",
+      description: "I’m currently open to new opportunities and interesting projects. Whether you have a question or just want to say hi, I’ll do my best to respond.",
       sendEmail: "Send Email",
       copyEmail: "Copy Email",
       copied: "Copied!",
@@ -207,9 +205,9 @@ const translations: Record<Language, Translations> = {
     hero: {
       badge: "Disponible para trabajar",
       title: "Creando software eficiente.",
-      description:
-        "Soy un Backend Engineer fanático de crear soluciones del mundo real a través de modificar bits 🧑‍💻.",
+      description:"Soy un Backend Engineer fanático de crear soluciones del mundo real a través de modificar bits 🧑‍💻.",
       viewProjects: "Ver Proyectos",
+      resumeURL: './ivan_cv_es.pdf',
       getInTouch: "Contactar",
       scroll: "Scroll",
       codeSnippet: "'Open to work 😊'",
@@ -292,7 +290,7 @@ const translations: Record<Language, Translations> = {
           period: "2024 - Presente",
           description:
             "• Diseñé programas para automatizar la extracción y el procesamiento de datos desde diversos sitios web.\n• Generé reportes en formato XLS para facilitar un análisis más eficiente de la información.\n• Desarrollé bots de Telegram que notificaban automáticamente cambios específicos en tiempo real.\n• Optimicé tareas repetitivas y mejoré el flujo de trabajo mediante soluciones de automatización personalizadas.",
-          skills: ["Node.Js", "TypeScript", "Express", "MySQL"],
+          skills: ["Node.Js", "TypeScript", "Selenium", "NPM"],
         },
       },
     },

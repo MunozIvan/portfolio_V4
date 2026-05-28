@@ -94,7 +94,9 @@ export function Experience() {
 
         <FadeIn delay={0.4} className="mt-12">
           <motion.a
-            href="#"
+            href={t.hero.resumeURL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-primary hover:underline underline-offset-4 font-medium"
             whileHover={{ x: 4 }}
           >
